@@ -3,7 +3,7 @@ import {nextrapDoc} from "./nextrap-registry";
 
 const style = `
 
-:host {
+#wrapper {
     display: block;
     padding: 1rem;
     font-size: 16px;
@@ -32,7 +32,7 @@ class DocumentationVisualizer extends HTMLElement {
         let shadowRoot = this.attachShadow({mode: 'open'});
 
         let exampels = nextrapDoc().__projectDocs;
-        let html = '<style>' + style + '</style>';
+        let html = '<style>' + style + '</style><div id="wrapper">';
         let examples = '';
         let slotId = 0;
         for (let key in exampels) {
@@ -49,7 +49,7 @@ class DocumentationVisualizer extends HTMLElement {
                 }
             }
         }
-        this.shadowRoot.innerHTML = html;
+        this.shadowRoot.innerHTML = html + "</div>";
         this.innerHTML = examples;
     }
 }

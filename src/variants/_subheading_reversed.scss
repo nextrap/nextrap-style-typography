@@ -3,32 +3,20 @@
 
     h2:has(+ blockquote) {
         font: var(--font-p);
-        font-weight: ;
+
     }
 
     h2 + blockquote > p {
-        font-size: var(--t-font-size-h2);
-        line-height: var(--t-line-height-header);
-        font-family: var(--t-font-family-header);
+        font: var(--font-h2);
         color: var(--t-primary) !important;
-        margin: var(--t-header-margin, 0 0 20px 0);
-        hyphens: manual;
     }
 
     h1:has(+ blockquote) {
-
-        font-size: var(--t-font-size-h4);
-        color: var(--t-accent) !important;
-        margin-bottom: var(--t-paragraf-margin-bottom);
+        font: var(--font-p);
     }
 
     h1 + blockquote > p {
-        font-size: var(--t-font-size-h1);
-        color: var(--t-primary) !important;
-        line-height: var(--t-line-height-header);
-
-        margin: var(--t-header-margin, 0 0 20px 0);
-        hyphens: manual;
+       font: var(--font-h1);
     }
 
 }
