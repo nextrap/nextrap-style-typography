@@ -1,0 +1,76 @@
+.nx-typography {
+
+    font-size: 10px; // Set calculation base to 10px so 1rem = 10px and 1.6rem = 16px
+    line-height: 2.6rem;
+
+    --line-height-base: 1.2;
+    --line-height-header: 1.2;
+    --font-h6: normal #{$font-size-h6}  #{$font-family-header};
+    --font-h5: normal #{$font-size-h5} #{$font-family-header};
+    --font-h4: normal #{$font-size-h4} #{$font-family-header};
+    --font-h3: normal #{$font-size-h3} #{$font-family-header};
+    --font-h2: normal #{$font-size-h2} #{$font-family-header};
+    --font-h1: normal #{$font-size-h1} #{$font-family-header};
+    --font-small: normal #{$font-size-small} #{$font-family-base};
+    --font-p: normal #{$font-size-p} #{$font-family-base};
+
+
+
+
+    p {
+        font: var(--font-p);
+        line-height: var(--line-height-base);
+    }
+
+
+    /* Set specific font sizes for headings */
+    h1 {
+        font: var(--font-h1);
+        line-height: var(--line-height-header);
+    }
+
+    h2 {
+        font: var(--font-h2);
+    }
+
+    h3 {
+        font: var(--font-h3);
+    }
+
+    h4 {
+        font: var(--font-h4);
+    }
+
+    h5 {
+        font: var(--font-h5);
+    }
+
+    h6 {
+        font: var(--font-h6);
+    }
+
+    small {
+        font: var(--font-small);
+    }
+
+}
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font: var(--font-p);
+    vertical-align: baseline;
+}

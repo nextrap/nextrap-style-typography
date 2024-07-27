@@ -1,0 +1,24 @@
+
+
+
+$font-size-factor: 1.2 !default;
+$font-size-base: 1rem !default;
+$font-family-base: sans-serif !default;
+$font-family-header: $font-family-base !default;
+$font-variant-base: normal !default;
+$font-variant-header: $font-variant-base !default;
+$line-height-base: 1.4 !default;
+
+$typography-font-color-base: #111 !default;
+$typography-font-color-header: $typography-font-color-base !default;
+
+
+// Calculate font sizes for headings
+$font-size-p: $font-size-base !default;
+$font-size-h1: $font-size-base * $font-size-factor * $font-size-factor * $font-size-factor * $font-size-factor * $font-size-factor !default;
+$font-size-h2: $font-size-base * $font-size-factor * $font-size-factor * $font-size-factor * $font-size-factor !default;
+$font-size-h3: $font-size-base * $font-size-factor * $font-size-factor * $font-size-factor !default;
+$font-size-h4: $font-size-base * $font-size-factor * $font-size-factor !default;
+$font-size-h5: $font-size-base * $font-size-factor !default;
+$font-size-h6: $font-size-base !default;
+$font-size-small: calc($font-size-base / $font-size-factor) !default;
