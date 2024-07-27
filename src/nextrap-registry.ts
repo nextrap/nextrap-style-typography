@@ -6,6 +6,7 @@ export type ProjectDocExampleType = {
     htmlCode?: string,
     cssCode?: string,
     jsCode?: string,
+    mdCode?: string,
     title?: string,
 }
 

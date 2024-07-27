@@ -8,9 +8,12 @@ const style = `
     padding: 1rem;
     font-size: 16px;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
+    background-color: white;
     margin: 1rem;
+}
+
+h1 {
+    border-bottom: 1px solid #ccc;
 }
 
 `;

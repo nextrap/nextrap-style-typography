@@ -19,4 +19,15 @@ const example = `
 
 `;
 
-nextrapDoc().addExample({htmlCode: example});
+const exampleMd = `
+
+# Willkommen bei <br>Dr. med. XXX XXX
+
+Wir sind eine moderne Facharztpraxis für Allgemeinmedizin
+und Innere Medizin in Berlin.
+
+Unser Ziel ist es, Ihnen eine umfassende und individuelle
+medizinische Versorgung auf höchstem Niveau zu bieten.
+`;
+
+nextrapDoc().addExample({htmlCode: example, mdCode: exampleMd});
